@@ -14,6 +14,16 @@ exports.createPages = async ({ graphql, actions }) => {
     }
  `)
 
+ /*const { createRedirect } = actions
+
+  createRedirect({
+    fromPath: `/`,
+    toPath: `/projects`,
+    redirectInBrowser: true,
+    isPermanent: false,
+  })*/
+
+
   data.allMarkdownRemark.nodes.forEach(node => {
     actions.createPage({
       path: '/projects/' + node.frontmatter.slug,
