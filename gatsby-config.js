@@ -25,7 +25,7 @@ module.exports = {
       },
     },
   ],
-  //pathPrefix: `/projects`,
+
   siteMetadata: {
     title: 'Demo Gatsby Project',
     description: 'Very new and useful framework works on react fundamentals',
